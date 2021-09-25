@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hint_damage</class>
+ <widget class="QDialog" name="hint_damage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>944</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Damage hint</string>
+  </property>
+  <layout class="QVBoxLayout">
+   <property name="spacing">
+    <number>4</number>
+   </property>
+   <property name="leftMargin">
+    <number>4</number>
+   </property>
+   <property name="topMargin">
+    <number>4</number>
+   </property>
+   <property name="rightMargin">
+    <number>4</number>
+   </property>
+   <property name="bottomMargin">
+    <number>4</number>
+   </property>
+   <item>
+    <widget class="QLabel">
+     <property name="text">
+      <string>Copy value(s) from tooltip in Path of Building, e.g.:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="resources.qrc">:/resources/pob_damage.png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel">
+     <property name="text">
+      <string>In example above:
+- &quot;increased/reduced&quot; = &quot;7.59&quot;
+- &quot;more/less&quot; = &quot;5.24&quot;
+- &quot;multiplier&quot; = &quot;1.71&quot;
+- &quot;effective DPS modifier&quot; = &quot;1.716&quot;
+
+Nota bene: be sure to set &quot;Skill stages&quot; to zero in Path of Building to avoid miscalculation!</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/pob_cast.png</file>
+        <file>resources/pob_damage.png</file>
+        <file>resources/pob_duration.png</file>
+    </qresource>
+</RCC>
