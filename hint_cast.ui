@@ -59,7 +59,7 @@
 - &quot;increased/reduced&quot; = &quot;1.55&quot;
 - &quot;more/less&quot; = &quot;1.07&quot;
 
-Nota bene: &quot;More/less&quot; does not affect brand's &quot;hitrate&quot; as of Path of Exile 3.15 so leave it default (&quot;1.0&quot;).
+Nota bene: &quot;More/less&quot; does not affect brand's &quot;hitrate&quot; as of Path of Exile 3.16 so leave it default (&quot;1.0&quot;).
 If it's not true - feel free to enter value.</string>
      </property>
     </widget>
