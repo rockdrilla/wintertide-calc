@@ -27,6 +27,12 @@ static F brand_damage_base(void) {
         damage_inc += (skill_data.wintertide_brand.labyrinth_damage_inc / 100.0);
     }
 
+    F damage_edps_runesmith = 1.0;
+    if (combat.tree_runesmith) {
+        damage_edps_runesmith += ((skill_tree.runesmith.damage_taken_per_brand * (double) combat.brands_attached) / 100.0);
+        damage_inc *= damage_edps_runesmith;
+    }
+
     return skill_data.wintertide_brand.damage[combat.gem_level - 1]
            * damage_inc
            * combat.damage_more

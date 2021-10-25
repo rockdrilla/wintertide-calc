@@ -458,7 +458,11 @@
                <number>2</number>
               </property>
               <item>
-               <widget class="QDoubleSpinBox" name="spin_dmg_edps_mult"/>
+               <widget class="QDoubleSpinBox" name="spin_dmg_edps_mult">
+                <property name="toolTip">
+                 <string>Be sure not to include in eDPS from PoB &quot;Runesmith&quot;-related multiplier (set number of attached brands to &quot;0&quot;).</string>
+                </property>
+               </widget>
               </item>
               <item>
                <widget class="QLabel">
