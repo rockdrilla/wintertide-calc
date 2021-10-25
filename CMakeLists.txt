@@ -44,21 +44,21 @@ set( PROJECT_SOURCES
 )
 
 if ( WIN32 )
-    qt_add_executable( wintertide-calc
+    qt_add_executable( ${CMAKE_PROJECT_NAME}
         WIN32
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 else()
-    qt_add_executable( wintertide-calc
+    qt_add_executable( ${CMAKE_PROJECT_NAME}
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 endif ()
 
-target_link_libraries( wintertide-calc PUBLIC Qt6::Core Qt6::Widgets)
+target_link_libraries( ${CMAKE_PROJECT_NAME} PUBLIC Qt6::Core Qt6::Widgets)
 
-qt_finalize_executable(wintertide-calc)
+qt_finalize_executable(${CMAKE_PROJECT_NAME})
 
 if ( WIN32 )
     set ( build_with_deploy Release MinSizeRel )
@@ -87,6 +87,6 @@ if ( WIN32 )
             )
         endfunction()
 
-        windeployqt( wintertide-calc )
+        windeployqt( ${CMAKE_PROJECT_NAME} )
     endif ()
 endif ()
