@@ -1,0 +1,7 @@
+{
+    "cmake.configureOnOpen": true,
+    "cmake.environment": {
+        "CMAKE_PREFIX_PATH": "${env:QtRoot}\\6.2.0\\mingw81_64",
+        "CMAKE_MODULES_PATH": "${env:QtRoot}\\6.2.0\\mingw81_64\\lib\\cmake",
+    },
+}

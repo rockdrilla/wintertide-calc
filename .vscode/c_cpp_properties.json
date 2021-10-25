@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "defines": [ "_DEBUG", "UNICODE", "_UNICODE" ],
+            "compilerPath": "${env:QtRoot}\\Tools\\mingw810_64\\bin\\g++.exe",
+            "includePath": [
+                "${env:QtRoot}\\Tools\\mingw810_64\\include",
+                "${env:QtRoot}\\6.2.0\\mingw81_64\\include\\**",
+                "${default}"
+            ],
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
